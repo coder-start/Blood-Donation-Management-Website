@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset ="UTF-8">
+  <title>Science behind this</title>
+  <style type="text/css">
+      input {
+       box-sizing: border-box;
+      border: 2px solid #000;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+
+    input:focus {
+      border: 3px solid #00F;
+    }
+    input[type=button], input[type=submit],input[type=reset] {
+      background-color: green;
+      border: 2px solid black;
+      color: white;
+      padding: 10px 15px;
+      text-decoration-style: bold;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }  
+    :root { --col1 : lightblue;
+      --col2 : white;
+    }
+    form{ margin-left: 20%;
+          margin-right: 20%;
+          text-align: left;
+          padding-top: 20px;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 40px;
+          background-color: var(--col2);
+    }
+
+    body { margin-left: 50px;
+           padding-left: 50px;
+    }
+
+    .center{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    } 
+
+    .right{
+      display: block;
+      margin-left: auto;
+    } 
+
+    .left{
+      display: block;
+      margin-right: auto;
+    }  
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  color: black;
+  display: block;
+  max-width: 200%;
+}
+
+.arrow {
+  border: solidblack;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.aligned {
+  display: flex;
+  align-items: center;
+ }
+
+button{
+  border: 2px solid black;
+  color: black;
+  padding: 2px 5px;
+  text-decoration-style: bold;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+/*Signup --> */
+
+body.signup {font-family: Arial, Helvetica;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input.signup {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: lightgrey;
+}
+
+input[type="radio"].signup {
+  width: 10%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: lightgrey;
+}
+
+/* Add a background color when the inputs get focus */
+input.signup:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.signupbtn{
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signupbtn:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: red;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 40%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+
+.close {
+  margin-left: 90%;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+/* <-- ended */
+
+.model {
+  display: none; 
+  position: center; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 50%; 
+  height: 50%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+.box{
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.hvmid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pod {
+    display: block;
+    width: 25%;
+    text-decoration: none;
+    color: #5f5f5f;
+    padding: 15px 15px 22.5px;
+    border: 1px solid rgba(0,107,84,.3);
+    background-color: rgba(0,107,84,.3);
+    margin-bottom: 30px;
+    transition: all .3s linear 0s;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 16%);
+    float: left;
+    margin-left: 5%;
+}
+   body{ 
+    margin-left: 80px;
+    padding-left: 50px;}
+    h2{
+      color : blue;
+      text-align: center;
+    }
+ div[id^='myDIV']{
+      width: 100%;
+      padding: 20px 0;
+      text-align: left;
+      background-color: lightblue;
+      margin-top: 20px;
+      display: none;
+    }
+  .block{
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+    border: 2 px solid black;
+    box-sizing: border-box;
+  }
+  span{
+    margin-left: 10%;
+   }
+</style>
+<script>
+function myFunction(y) {
+  var x = document.getElementById(`myDIV${y}`);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ </head>
+ <body>
+ <h1  style="color: red; text-align: center;">Science behind blood donation</h1>
+ <div class = "benefits"> 
+ <h2>Why you should donate blood?</h2>
+ <div class="aligned">
+  <img src="https://www.indushealthplus.com/media/article_img/blood-donation-facts-benefits-thumb.jpg" width="30%"/>
+ <span>
+ <button onclick="myFunction(1)">Identifying adverse health effects<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto" /></button>
+ <div id="myDIV1" ><p>
+ The test will check the person’s:
+<ul> 
+<li>blood pressure</li>
+<li>body temperature</li>
+<li>heart rate</li>
+<li>hemoglobin or iron levels</li>
+</ul>
+If the test reveals a problem, the person will not be able to donate blood. However, the results could be a first step toward seeking treatment.</p>
+</div>
+<br><br>
+<button onclick="myFunction(2)">Cardiovascular health
+<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto" /></button>
+<div id="myDIV2">
+<p>In 2019, researchers looked at the data of nearly 160,000 females who had donated blood for 10 years or more. They concluded that blood donation offers a “protective effect of long-term, high-frequency blood donation against cardiovascular disease.” </p></div>
+<br><br>
+<button onclick="myFunction(3)">Lowering Blood Pressure
+<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto" /></button>
+<div id="myDIV3">
+<p>Some researchTrusted Source has suggested that donating blood may also reduce blood pressure.In 2015, scientists monitored the blood pressure of 292 donors who gave blood one to four times over the course of a year. Around half had high blood pressure.</p></div>
+<br><br>
+<button onclick="myFunction(4)">Contributing to the community
+<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto" /></button>
+<div id="myDIV4">
+<p><u>Donating one unit of blood may save the lives of up to three people</u>, according to the American Red Cross. Blood donors provide a vital service to the community. Making a difference in the lives of others can boost a donor’s sense of well-being.</p>
+<br><br></div>
+</span>
+</div>
+</div>
+<h2>Who can donate blood?</h2>
+Any healthy adult, both male and female, can donate blood. Men can donate safely once in every three months while women can donate every four months. There are certain criterias for it:-<br><br>
+<ol>
+  <li>Age of donor should be between 18 to 65 years</li><br>
+  <li>Weight should not be less than 45kg</li><br>
+  <li>Temperature and pulse of donor should be normal</li>   <br>
+  <li>Normal blood pressure and temperature</li><br>
+  <li>Haemoglobin shiuld not be less than 12.5 grams</li><br>
+  <li>Child Birth- Should have delivered 1 year ago and stopped lactation</li><br>
+  <li>Diabetes- YES if resolved or controled by diet or oral drug. NO if treated with insulin injections</li><br>
+  <li>Should not have any heart disease,cancer, hepatitis B,C, Tuberculosis, leprosy, Epilepsy, Asthma on Steroids, Bleeding disorders, Thalassemia, Sickle Cell Anemia, Polycythemia Vera</li><br>
+  <li>Should NOT have had any history of Genital ulcers/Discharge, History of multiple sexual partners and Drug Addiction.</li><br><br>
+</ol>
+For more info visit <a href="http://nbtc.naco.gov.in/page/eligibility/">http://nbtc.naco.gov.in/page/eligibility/</a> 
+<!-- https://image.shutterstock.com/image-illustration/recipient-donor-types-blood-a-600w-1315208918.jpg -->
+<h2>Who can donate blood to whom?</h2>
+<div class="aligned">
+  <img src="https://stanfordbloodcenter.org/wp-content/uploads/2018/03/0318-SouthBay-Center-Infographics_Compatibility-WEB.jpg" width="50%">
+  <span style="margin-left: 5%">
+  Blood can be classified into four major groups depending on the presence or absence of the antigen A and B. These antigens are present on the red blood cells.<br>
+    Group A: People with A blood group will have only antigen A on the surface of their red blood cells.<br>
+    Group B: People with B blood group will have only antigen B on the surface of their red blood cells.<br>
+    Group AB: People with AB blood group will have antigen A as well as antigen B on the surface of their red blood cells.<br>
+    Group O: Neither antigen A nor B is present on the red blood cells in people with O blood group.<br><br>
+<button onclick="myFunction(8)">Rh factor
+<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto" /></button>
+<div id="myDIV8">
+There is another antigen present on the red blood cells and it is known as the Rh factor.<br> If Rh is present in your blood then it is called as positive (+) and if it is absent then it is called negative (-). So, there are eight different blood types, which are A +, A-, B+, B-, AB+ AB-, O+ and O-.</div><br>
+<button onclick="myFunction(9)">Which blood group can donate to whom?
+<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto" /></button>
+<div id="myDIV9">
+<br><br>
+If you are O-: You are the universal donor. You can give blood to all the other blood types. However, you can receive only from O-.<br>
+If you are O+: You can give blood to A+, B+, O+ and AB+. You can receive blood from O+ and O-.<br>
+If you are A-: You can give blood to A-, A+, AB- and AB+. You can receive blood from A- and O-.<br>
+If you are A+: You can give blood to A+ and AB+. You can receive blood from A+, A-, O+ and O-.<br>
+If you are B-: You can give blood to B-, B+, AB+ and AB-, You can receive blood from B- and O-.<br>
+If you are B+: You can give blood to B+ and AB+. You can receive blood from B+, B-, O+ and O-.<br>
+If you are AB-: You can give blood to AB- and AB+. You can receive from AB-, A-, B- and O-.<br>
+If you are AB+: You are the universal receiver. You receive blood from all other blood types but can give only to AB+.
+</div>   <br>
+  </span>
+</div>
+<a id="process">
+<h2>Process of blood donation and after donation</h2>
+<div class="aligned">
+<img src="https://ljg1w8gjhvvqr30c.blob.core.windows.net/storage-web-production/nybloodcenter/filer_public/ec/3f/ec3f3408-5173-4a0a-9e25-2666e9c708e4/nybc_better_experience_postcard_2019_6x4_f.png" width="40%" />
+<span >
+<button onclick="myFunction(6)">Procedure<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto"/></button>
+<div id="myDIV6">
+After checking the medical history of the donor and undergoing medical checkup. If the person's blood is considered safe for blood donation then his/her blood is taken.<br>
+During the process of donating blood, a healthcare provider will: <ol>
+ <li>Clean the donor’s arm with an alcohol pad.</li>
+ <li>Insert a new and sterile needle into a vein.</li>
+ <li>Attach the needle to collection equipment, consisting of tubing and a bag.</li>
+ <li>Allow the blood to flow into the bag until it is full.  </li></ol>
+The person will donate one unit of blood, and this will take 6–10 minutes. The whole process will take around 45–60 minutes.</div><br><br>
+<button onclick="myFunction(7)">After Blood Donation<img src="https://static.thenounproject.com/png/3466617-200.png" width="30px" height="auto" /></button>
+<div id="myDIV7"><ul>
+<li>After the donation, a healthcare provider will apply pressure with cotton gauze and place a dressing over the donor’s arm.</li>
+<li>The donor will usually need to wait for 10–15 minutes before leaving, during which time they will receive some refreshments.</li>
+<li>If the needle prick is bleeding after donation, the donor should apply pressure and raise the arm for 3–5 minutes.</li>
+<li>If there is bruising or bleeding under the skin, they can apply a cold pack intermittently for 24 hours, then alternate with warm packs.</li>
+<br><br></div>
+</span></div></a>
+
+<h2>Side effects of blood donation</h2>
+Sometimes, a person can experience side effects after donating blood.Although severe adverse effects are rare, temporary reactions can occur, including:
+<ul>
+<li>weakness</li>
+<li>dizziness</li>
+<li>feeling faint</li>
+<li>lightheadedness</li>
+<li>nausea</li>
+<li>bleeding from the needle prick</li>
+<li>bleeding under the skin or bruising</li></ul>
+These symptoms usually disappear within 24 hours.<br><br>
+<h2>Tips after blood donation</h2>
+Some ways of minimizing these effects after donation include drinking plenty of fluids and eating well-balanced meals over the next 24–48 hours.
+<br>
+Since after blood donation level of iron decreases in blood. So,foods that can boost a person’s iron intake include:
+<ul>
+<li>red meat</li>
+<li>spinach</li>
+<li>iron-fortified juices and cereals</li>
+</ul>
+ </body>
+</html>

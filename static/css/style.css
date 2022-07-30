@@ -1,0 +1,255 @@
+input {
+    box-sizing: border-box;
+   border: 2px solid #000;
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+ }
+
+ input:focus {
+   border: 3px solid #00F;
+ }
+ input[type=button], input[type=submit],input[type=reset] {
+   background-color: green;
+   border: 2px solid black;
+   color: white;
+   padding: 10px 15px;
+   text-decoration-style: bold;
+   font-size: 20px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }  
+ :root { --col1 : lightblue;
+   --col2 : white;
+ }
+ form{ margin-left: 20%;
+       margin-right: 20%;
+       text-align: left;
+       padding-top: 20px;
+       padding-left: 30px;
+       padding-right: 30px;
+       padding-bottom: 40px;
+       background-color: var(--col2);
+ }
+
+ body { margin-left: 50px;
+        padding-left: 50px;
+ }
+
+ .center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ } 
+
+ .right{
+   display: block;
+   margin-left: auto;
+ } 
+
+ .left{
+   display: block;
+   margin-right: auto;
+ }  
+
+.dropdown {
+position: relative;
+display: inline-block;
+color: black;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: grey;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+color: black;
+display: block;
+max-width: 200%;
+}
+
+.arrow {
+border: solidblack;
+border-width: 0 4px 4px 0;
+display: inline-block;
+padding: 3px;
+}
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+.aligned {
+display: flex;
+align-items: center;
+}
+
+button{
+border: 2px solid black;
+color: black;
+padding: 2px 5px;
+text-decoration-style: bold;
+font-size: 20px;
+margin: 4px 2px;
+}
+
+/*Signup --> */
+
+body.signup {font-family: Arial, Helvetica;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input.signup {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: lightgrey;
+}
+
+input[type="radio"].signup {
+width: 10%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: lightgrey;
+}
+
+/* Add a background color when the inputs get focus */
+input.signup:focus {
+background-color: #ddd;
+outline: none;
+}
+
+.signupbtn{
+background-color: green;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+.signupbtn:hover {
+opacity:1;
+}
+
+.cancelbtn {
+padding: 14px 20px;
+background-color: red;
+}
+
+
+.cancelbtn, .signupbtn {
+float: left;
+width: 40%;
+}
+
+
+.container {
+padding: 16px;
+}
+
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+left: 0;
+top: 0;
+width: 100%; 
+height: 100%; 
+overflow: auto; 
+background-color: #474e5d;
+padding-top: 50px;
+}
+
+
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 15% auto; 
+border: 1px solid #888;
+width: 80%; 
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+
+.close {
+margin-left: 90%;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+color: #f44336;
+cursor: pointer;
+}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+  width: 100%;
+}
+}
+/* <-- ended */
+
+.model {
+display: none; 
+position: center; 
+z-index: 1; 
+left: 0;
+top: 0;
+width: 50%; 
+height: 50%; 
+overflow: auto; 
+background-color: #474e5d;
+padding-top: 50px;
+}
+
+.box{
+position: relative;
+text-align: center;
+color: black;
+}
+
+.hvmid {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.pod {
+ display: block;
+ width: 25%;
+ text-decoration: none;
+ color: #5f5f5f;
+ padding: 15px 15px 22.5px;
+ border: 1px solid rgba(0,107,84,.3);
+ background-color: rgba(0,107,84,.3);
+ margin-bottom: 30px;
+ transition: all .3s linear 0s;
+ box-shadow: 0 1px 3px rgb(0 0 0 / 16%);
+ float: left;
+ margin-left: 5%;
+}
